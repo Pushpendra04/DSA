@@ -1,0 +1,5 @@
+Friend Function:-	
+		friend is a keyword in c++. if a class declares a non-member function as a friend then that function can even access the private data of that class.According to some critics this is against the principle of oops(security) but actually it is not true because a class itself declares the functions as a friend.
+Friend can be a function or friend can be a class.
+A function can be a member of only one class but it can be a friend of multiple classes.
+A member function access data of its class directly but a friend function can access data of its friend class through object.

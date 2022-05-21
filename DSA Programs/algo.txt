@@ -1,0 +1,30 @@
+PUSH (STACK, TOP, MAXSTK, ITEM)
+	This procedure adds a new ITEM at the TOP of a stack.
+1. 	[Stack already filled?]
+	If TOP = MAXSTK, then: 
+		Write: OVERFLOW, and Return.
+	[End of If Structure.]
+2.	Set TOP:= TOP + 1. 	[Increases TOP by 1.]
+3.	Set STACK [TOP]: = ITEM.[Inserts ITEM in new TOP position.]
+4.	Return.
+
+POP (STACK, TOP, ITEM)
+	This procedure removes the TOP element of STACK and assigns it to 	the variable ITEM.
+1.	[Stack has an item to be removed?]
+ 	If TOP = 0, then: 
+		Write: UNDERFLOW, and Return.
+	[End of If Structure.]
+2.	Set ITEM:= STACK[TOP].		[Assigns TOP element to ITEM.]
+3.	Set TOP:=TOP - 1. 		[Decreases TOP by 1.]
+4.	Return.
+
+PEEP(STACK, TOP, ITEM)
+	This procedure shows the top element of STACK 
+	without removing it and assigns it to 
+	the variable ITEM.
+1.	[Stack has an item to be showed?]
+	If TOP = 0, then: 
+		Write: UNDERFLOW, and Return.
+	[End of If Structure.]
+2.	Set ITEM:= STACK[TOP].		[ Assigns TOP element to ITEM.]
+3.	Return.

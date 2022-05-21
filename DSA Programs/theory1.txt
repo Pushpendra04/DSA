@@ -1,0 +1,58 @@
+Inheritance is a process by which features and properties of one class is transfered into another class (parent to child class) without changing the base class and adding new features into derived class this is also called as code reusability. its help is reduce the size of our program and saving of time also.
+class A
+{
+     public:
+	int x;
+};
+class B : public A
+{
+	public:
+		int y;
+};
+int main()
+{
+	B b1;
+	b1.x=5;
+	b1.y=10;
+	cout<<x<<"\t"<<y<<endl;
+	getch();
+	return 0;
+}
+
+class A
+{
+	int x;
+	public:
+		void setx(int x1)
+		{
+		   x=x1;
+		}
+		void displayx()
+		{
+		   cout<<x<<endl;
+		}
+};
+class B:public A
+{
+	int y;
+	public:
+		void sety(int y1)
+		{
+		  y=y1;
+		}
+		void displayy()
+		{
+		   cout<<y<<endl;
+		}
+};
+int main()
+{
+	B b1;
+	b1.x=5;	//error x is private
+	b1.setx(5);
+	b1.sety(10);
+	b1.displayx();
+	b1.displayy();
+	getch();
+	return 0;
+}

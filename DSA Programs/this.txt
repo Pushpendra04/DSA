@@ -1,0 +1,17 @@
+This keyword:-
+		this is a pointer inside the class which stores the address of the function calling object.Every class contains only one this pointer irrespective of number of objects.when we call a member function then the address of the calling object is passed as an argument to the function and this address will be recived by "this" pointer inside the function defination.The name of every class member variables will be prefixed by "this->" automatically.This is called as implicit use of this.
+
+			sometime the name of a local variable is same as of member variable then priority will be given to local variable. it means local variable will override instance member variable. This is called as instance variable hidding. Now to use member variable in this case we have to prefix "this->" before member name.This is called as explicit use of "this".
+
+class A
+{
+	int x;	//member 
+	void m1()
+	{
+		
+		int x;	//local
+		cout<<x;		//local
+		cout<<this->x;	//member
+	}
+};
+	
